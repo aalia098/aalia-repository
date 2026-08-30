@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Aalia Nomani — Personal Portfolio & Creative Developer</title>
+  <meta name="title" content="Aalia Nomani — Personal Portfolio & Creative Developer">
+  <meta name="description" content="Personal portfolio of Aalia Nomani, 2nd-year B.Tech CSE student at CGC Landran. Exploring front-end engineering, Generative AI, prompt engineering, and building practical digital products.">
+  <meta name="author" content="Aalia Nomani">
+  <meta name="keywords" content="Aalia Nomani, Frontend Developer, B.Tech CSE, CGC Landran, Generative AI, Prompt Engineering, Uncleads, Doot, Mass Email Verifier, Web Development">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/aalia098">
+  <meta property="og:title" content="Aalia Nomani — Personal Portfolio">
+  <meta property="og:description" content="Building things, experimenting with technology, front-end development, Generative AI, and practical digital experiences.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Background Atmosphere (Purposeful, subtle, no random clutter) -->
+  <div class="bg-ambient-layer" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       1. PRELOADER & GREETING SEQUENCE (Dennis Snellenberg Reference)
+       ========================================================================= -->
+  <div id="preloader" role="dialog" aria-modal="true" aria-label="Loading Greeting Screen">
+    <div class="greeting-wrapper">
+      <h1 class="greeting-text active">Hello <span class="greeting-sparkle">✦</span></h1>
+    </div>
+    <div class="preloader-footer">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+      <span class="preloader-badge">Aalia Nomani · Portfolio</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. FLOATING NAVIGATION DOCK
+       ========================================================================= -->
+  <header>
+    <nav class="navbar-dock" aria-label="Primary Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Aalia Nomani Home">
+        <span class="nav-brand-dot"></span>
+        <span>AALIA</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button id="btn-theme-toggle" class="nav-control-btn" aria-label="Toggle Color Theme" title="Switch Accent Palette">
+          🎨
+        </button>
+        <button id="btn-sound-toggle" class="nav-control-btn" aria-label="Enable sound" title="Sound Effects (Web Audio)">
+          🔇
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       3. HERO SECTION (Clean, Breathing, No Random 3D Background Objects)
+       ========================================================================= -->
+  <main>
+    <section id="hero" class="hero-section container">
+      <div class="hero-meta-pill">
+        <span class="pulse-indicator"></span>
+        <span>2nd Year CSE · CGC Landran</span>
+      </div>
+
+      <div class="hero-title-container">
+        <p class="hero-eyebrow">✦ Creative Developer & Tech Enthusiast</p>
+        <h1 class="hero-main-title text-gradient">AALIA NOMANI</h1>
+        <p class="hero-role-badge">
+          B.Tech in Computer Science & Engineering <span>· 3rd Sem</span>
+        </p>
+      </div>
+
+      <p class="hero-description">
+        Interested in <strong>building things</strong>, experimenting with technology, <strong>front-end development</strong>, <strong>Generative AI</strong>, and practical digital experiences that solve real workflow problems.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <a href="#contact" class="btn btn-glass">
+          <span>Let's Connect</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </a>
+        <div class="hero-status-widget">
+          <span class="cat-icon">🐱</span>
+          <span>Bongo Cat status: <strong>Chilling & Ready</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. ABOUT SECTION
+         ========================================================================= -->
+    <section id="about" class="about-section container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Personal Narrative</span>
+        </div>
+        <h2 class="section-title">Curiosity, code, and <span class="text-gradient">practical creation</span>.</h2>
+        <p class="section-subtitle">Bridging foundational computer science with modern digital craftsmanship.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-editorial-text">
+          <p>
+            I'm a <span class="about-highlight">2nd-year Computer Science & Engineering student</span> at Chandigarh Engineering College (CGC Landran), driven by a genuine passion for building tangible digital products.
+          </p>
+          <p>
+            Rather than staying purely theoretical, I immerse myself in <span class="about-highlight">front-end development</span>, <span class="about-highlight">Generative AI</span>, and <span class="about-highlight">prompt engineering</span> to create interfaces and software tools that feel intuitive, responsive, and genuinely useful.
+          </p>
+          <p>
+            From shipping production front-end interfaces to architecting bulk email tools and MX verification workflows, I love tackling real problems with clean code and thoughtful design.
+          </p>
+        </div>
+
+        <div class="about-cards-column">
+          <div class="glass-card about-info-card">
+            <div class="about-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="about-card-content">
+              <h3>Academic Journey</h3>
+              <p>B.Tech Computer Science & Engineering at CGC Landran (2nd Year, 3rd Semester).</p>
+            </div>
+          </div>
+
+          <div class="glass-card about-info-card">
+            <div class="about-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="about-card-content">
+              <h3>Core Interests</h3>
+              <p>Front-end Development, Generative AI, Prompt Engineering & Digital Workflows.</p>
+            </div>
+          </div>
+
+          <div class="glass-card about-info-card">
+            <div class="about-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div class="about-card-content">
+              <h3>Location & Showcase</h3>
+              <p>Chandigarh / Punjab, India · Actively seeking challenging Internship opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. SKILLS SECTION (Zero Fake Percentages, High-Craft Categorization)
+         ========================================================================= -->
+    <section id="skills" class="skills-section container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Technical Toolkit</span>
+        </div>
+        <h2 class="section-title">Skills & <span class="text-gradient">Competencies</span></h2>
+        <p class="section-subtitle">Real, grounded technical capabilities organized by functional area.</p>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- Programming -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-category-title">
+              <span class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </span>
+              <span>Programming</span>
+            </div>
+            <span class="skill-count-badge">4 Languages</span>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-pill"><span class="pill-dot"></span><span>C</span></div>
+            <div class="skill-pill"><span class="pill-dot"></span><span>C++</span></div>
+            <div class="skill-pill"><span class="pill-dot"></span><span>Python</span></div>
+            <div class="skill-pill"><span class="pill-dot"></span><span>Java</span></div>
+          </div>
+        </div>
+
+        <!-- Development -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-category-title">
+              <span class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </span>
+              <span>Development</span>
+            </div>
+            <span class="skill-count-badge">Web & Interface</span>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-pill"><span class="pill-dot"></span><span>Front-end Development</span></div>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-category-title">
+              <span class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.36 2.08 6.23 5 7.37V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.63c2.92-1.14 5-4.01 5-7.37a8 8 0 0 0-8-8z"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/><path d="M10 13c.5.5 1.5.5 2 0"/></svg>
+              </span>
+              <span>AI & Emerging Tech</span>
+            </div>
+            <span class="skill-count-badge">Applied AI</span>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-pill"><span class="pill-dot"></span><span>Generative AI</span></div>
+            <div class="skill-pill"><span class="pill-dot"></span><span>Prompt Engineering</span></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-category-title">
+              <span class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </span>
+              <span>Tools & Productivity</span>
+            </div>
+            <span class="skill-count-badge">Office Suite</span>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-pill"><span class="pill-dot"></span><span>Excel</span></div>
+            <div class="skill-pill"><span class="pill-dot"></span><span>Microsoft Office</span></div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-category-title">
+              <span class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <span>Other Domains</span>
+            </div>
+            <span class="skill-count-badge">Operations</span>
+          </div>
+          <div class="skills-pill-cloud">
+            <div class="skill-pill"><span class="pill-dot"></span><span>Social Media Marketing (SMM)</span></div>
+            <div class="skill-pill"><span class="pill-dot"></span><span>Technical Support</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. PROJECTS SECTION (The 3 Core Projects — Primary Showcase)
+         ========================================================================= -->
+    <section id="projects" class="projects-section container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Featured Work</span>
+        </div>
+        <h2 class="section-title">Technical Projects & <span class="text-gradient">Product Work</span></h2>
+        <p class="section-subtitle">Real-world applications, frontend implementations, and digital workflow systems.</p>
+      </div>
+
+      <div class="project-showcase-stack">
+        <!-- PROJECT 01 — UNCLEADS.COM -->
+        <article class="project-feature-card">
+          <div class="project-info-side">
+            <span class="project-number">PROJECT 01</span>
+            <h3 class="project-heading">Uncleads.com</h3>
+            <span class="project-role-tag">Role: Frontend Development</span>
+            <p class="project-description">
+              A real-world commercial product where Aalia engineered and polished the frontend architecture. Focused on crafting seamless user-facing interfaces, responsive layouts, and interactive digital components that deliver a fast and modern web experience.
+            </p>
+            <ul class="project-key-points">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Modern, responsive frontend design across all screen sizes</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Intuitive user-facing experience & smooth navigation workflows</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Practical product development and interface implementation</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-viewport-wrapper">
+            <div class="viewport-header">
+              <div class="viewport-dots">
+                <span class="viewport-dot red"></span>
+                <span class="viewport-dot yellow"></span>
+                <span class="viewport-dot green"></span>
+              </div>
+              <span class="viewport-title">uncleads.com — Frontend Preview</span>
+            </div>
+            <div class="viewport-screen">
+              <div class="demo-live-badge">✦ Live Responsive Simulation</div>
+              <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                <button class="btn btn-glass uncleads-mode-btn active" data-mode="desktop" style="padding: 0.35rem 0.8rem; font-size: 0.75rem;">Desktop</button>
+                <button class="btn btn-glass uncleads-mode-btn" data-mode="tablet" style="padding: 0.35rem 0.8rem; font-size: 0.75rem;">Tablet</button>
+                <button class="btn btn-glass uncleads-mode-btn" data-mode="mobile" style="padding: 0.35rem 0.8rem; font-size: 0.75rem;">Mobile</button>
+              </div>
+              <div class="uncleads-preview-frame" style="width: 100%; transition: max-width 0.3s ease; margin: 0 auto; background: #ffffff; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm); padding: 1rem;">
+                <div style="font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 0.4rem;">Uncleads Digital Portal</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Interactive user experience & high-conversion interface design.</div>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <span style="font-size: 0.72rem; background: var(--accent-primary-subtle); color: var(--accent-primary); padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 600;">Clean UI/UX</span>
+                  <span style="font-size: 0.72rem; background: var(--accent-secondary-subtle); color: var(--accent-secondary); padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 600;">Dynamic Styles</span>
+                  <span style="font-size: 0.72rem; background: var(--accent-peach-subtle); color: var(--accent-peach); padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 600;">Frontend Logic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 — DOOT -->
+        <article class="project-feature-card">
+          <div class="project-info-side">
+            <span class="project-number">PROJECT 02</span>
+            <h3 class="project-heading">Doot</h3>
+            <span class="project-role-tag">Role: Product & Frontend Engineering</span>
+            <p class="project-description">
+              A dedicated mass and bulk email sender created to solve digital communication workflows, similar in purpose to Listmonk. Focused on high-volume campaign orchestration, clean product UI, and reliable dispatch handling.
+            </p>
+            <ul class="project-key-points">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bulk email workflow & recipient queue management</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Streamlined product interface for campaign dispatching</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Solving real-world mass communication digital challenges</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-viewport-wrapper">
+            <div class="viewport-header">
+              <div class="viewport-dots">
+                <span class="viewport-dot red"></span>
+                <span class="viewport-dot yellow"></span>
+                <span class="viewport-dot green"></span>
+              </div>
+              <span class="viewport-title">doot — Bulk Email Orchestrator</span>
+            </div>
+            <div class="viewport-screen">
+              <div class="demo-live-badge">✦ Interactive Queue Simulator</div>
+              <div style="background: #ffffff; border-radius: 8px; padding: 1rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm); margin-bottom: 1rem;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.5rem; font-family: var(--font-mono);">
+                  <span>Target Batch: Newsletter_2026_Q3</span>
+                  <span style="color: var(--accent-secondary); font-weight: 600;">1,250 Contacts</span>
+                </div>
+                <div style="width: 100%; height: 6px; background: rgba(190,150,160,0.15); border-radius: 999px; overflow: hidden; margin-bottom: 0.75rem;">
+                  <div id="doot-send-progress" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary)); transition: width 0.12s ease;"></div>
+                </div>
+                <div id="doot-send-status" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Status: Ready in queue</div>
+              </div>
+              <button id="btn-doot-send" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem; align-self: flex-start;">
+                Trigger Sample Batch 🚀
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 — MASS EMAIL VERIFIER -->
+        <article class="project-feature-card">
+          <div class="project-info-side">
+            <span class="project-number">PROJECT 03</span>
+            <h3 class="project-heading">Mass Email Verifier</h3>
+            <span class="project-role-tag">Role: Technical & Product Development</span>
+            <p class="project-description">
+              A mass email verification tool engineered with MX record inspection to validate deliverability. Focuses on filtering dead domains, executing DNS MX lookup checks, validating RFC syntax, and handling multi-address verification lists efficiently.
+            </p>
+            <ul class="project-key-points">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated MX checking & DNS mail server validation</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-email parsing & deliverability verification</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Practical technical problem-solving for data hygiene</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-viewport-wrapper">
+            <div class="viewport-header">
+              <div class="viewport-dots">
+                <span class="viewport-dot red"></span>
+                <span class="viewport-dot yellow"></span>
+                <span class="viewport-dot green"></span>
+              </div>
+              <span class="viewport-title">mass-verifier — MX Inspector</span>
+            </div>
+            <div class="viewport-screen">
+              <div class="demo-live-badge">✦ Live MX Record Checker Demo</div>
+              <div class="verifier-input-group">
+                <input type="text" id="verifier-email-input" class="verifier-input" value="contact@google.com" placeholder="name@domain.com" aria-label="Email address to verify">
+                <button id="btn-run-verifier" class="btn btn-primary" style="padding: 0.6rem 1.1rem; font-size: 0.82rem;">Inspect MX</button>
+              </div>
+              <div class="verifier-results-box">
+                <div class="result-row">
+                  <span>Syntax Check:</span>
+                  <span id="status-syntax" class="status-valid">✓ Valid RFC 5322</span>
+                </div>
+                <div class="result-row">
+                  <span>Domain Check:</span>
+                  <span id="status-domain" class="status-valid">✓ google.com</span>
+                </div>
+                <div class="result-row">
+                  <span>MX Record:</span>
+                  <span id="status-mx" class="status-valid">✓ smtp.google.com (Priority 10)</span>
+                </div>
+                <div class="result-row">
+                  <span>Verdict:</span>
+                  <span id="status-verdict" class="status-valid">✓ Deliverable & Active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. EDUCATION SECTION
+         ========================================================================= -->
+    <section id="education" class="education-section container">
+      <div class="glass-card education-card">
+        <div class="education-icon-box">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="education-details">
+          <h3>Chandigarh Engineering College</h3>
+          <div class="college-name">CGC Landran</div>
+          <p>
+            Bachelor of Technology in <strong>Computer Science & Engineering</strong>. Rigorous coursework in Data Structures, Algorithms, Object-Oriented Programming, Database Management, and Software Engineering.
+          </p>
+        </div>
+        <div class="education-badge">
+          <span class="semester-tag">2nd Year · 3rd Sem</span>
+          <span class="mono-tag" style="font-size: 0.78rem;">2024 – 2028 (Ongoing)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. JOSH COMEAU-INSPIRED ENDING & CONTACT SECTION
+         ========================================================================= -->
+    <section id="contact" class="ending-section container">
+      <div class="ending-narrative-container">
+        <p class="ending-step">You made it this far...</p>
+        <p class="ending-step">Okay...</p>
+        <p class="ending-step highlight">say hi? ✨</p>
+      </div>
+
+      <div class="ending-character-reveal">
+        <div class="pop-character-card">
+          <div class="character-avatar-holder">
+            <!-- Celebratory Bongo Avatar Icon -->
+            <svg viewBox="0 0 100 90" width="100%" height="100%">
+              <circle cx="50" cy="45" r="38" fill="#faf4f3" stroke="#d46b84" stroke-width="2"/>
+              <!-- Ears -->
+              <polygon points="24,20 38,12 36,28" fill="#d46b84"/>
+              <polygon points="76,20 62,12 64,28" fill="#d46b84"/>
+              <!-- Cheeks -->
+              <circle cx="34" cy="52" r="5" fill="#f4a6b8" opacity="0.6"/>
+              <circle cx="66" cy="52" r="5" fill="#f4a6b8" opacity="0.6"/>
+              <!-- Happy Eyes -->
+              <path d="M 32 42 Q 38 36 44 42" stroke="#241e26" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M 56 42 Q 62 36 68 42" stroke="#241e26" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Smile -->
+              <path d="M 44 54 Q 50 62 56 54" stroke="#241e26" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- Waving Paws -->
+              <ellipse cx="22" cy="56" rx="9" ry="6" fill="#d46b84" transform="rotate(-20 22 56)"/>
+              <ellipse cx="78" cy="56" rx="9" ry="6" fill="#d46b84" transform="rotate(20 78 56)"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Let's build something memorable.</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; max-width: 480px;">
+            Open for software engineering and frontend internship opportunities. Feel free to connect or inspect my source code.
+          </p>
+
+          <div class="contact-links-grid">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/aalia-nomani-469b8b371" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit Aalia Nomani on LinkedIn">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Professional Network</span>
+                <div class="contact-card-handle">LinkedIn Profile ↗</div>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/aalia098" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit Aalia Nomani on GitHub">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Code Repositories</span>
+                <div class="contact-card-handle">github.com/aalia098 ↗</div>
+              </div>
+            </a>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+            <button class="btn btn-glass copy-action-btn" data-copy-value="https://www.linkedin.com/in/aalia-nomani-469b8b371" style="font-size: 0.8rem; padding: 0.45rem 1rem;">
+              <span>Copy LinkedIn Link 📋</span>
+            </button>
+            <button class="btn btn-glass copy-action-btn" data-copy-value="https://github.com/aalia098" style="font-size: 0.8rem; padding: 0.45rem 1rem;">
+              <span>Copy GitHub Link 📋</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. RECURRING INTERACTIVE BONGO CAT COMPANION
+       ========================================================================= -->
+  <aside class="bongo-cat-container" aria-label="Interactive Mascot">
+    <div class="bongo-speech-bubble" role="status" aria-live="polite">
+      Hi! I'm Aalia's Bongo companion 🐱
+    </div>
+    <div class="bongo-cat-stage cat-calm" title="Click me to play!">
+      <svg class="bongo-cat-svg" viewBox="0 0 100 80">
+        <!-- Desk Surface -->
+        <rect x="5" y="65" width="90" height="12" rx="4" fill="#f0e5e4" stroke="rgba(212,107,132,0.3)" stroke-width="1.5"/>
+        <line x1="20" y1="71" x2="80" y2="71" stroke="#d46b84" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+
+        <!-- Cat Body & Head -->
+        <ellipse cx="50" cy="40" rx="32" ry="24" fill="#ffffff"/>
+        
+        <!-- Left Ear -->
+        <polygon points="26,24 38,10 42,24" fill="#ffffff"/>
+        <polygon points="29,22 37,13 40,22" fill="#fda4af"/>
+        
+        <!-- Right Ear -->
+        <polygon points="74,24 62,10 58,24" fill="#ffffff"/>
+        <polygon points="71,22 63,13 60,22" fill="#fda4af"/>
+
+        <!-- Eyes -->
+        <circle cx="36" cy="38" r="4.5" fill="#181926"/>
+        <circle class="pupil-left" cx="37" cy="37" r="1.8" fill="#ffffff"/>
+        <circle cx="64" cy="38" r="4.5" fill="#181926"/>
+        <circle class="pupil-right" cx="65" cy="37" r="1.8" fill="#ffffff"/>
+
+        <!-- Cheeks -->
+        <ellipse cx="28" cy="44" rx="4" ry="2" fill="#fda4af" opacity="0.7"/>
+        <ellipse cx="72" cy="44" rx="4" ry="2" fill="#fda4af" opacity="0.7"/>
+
+        <!-- Mouth -->
+        <path class="cat-mouth" d="M 44 44 Q 50 49 56 44" stroke="#181926" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+        <!-- Left Paw (Drumming) -->
+        <g class="paw-left">
+          <ellipse cx="32" cy="62" rx="7" ry="5" fill="#ffffff" stroke="#181926" stroke-width="1.5"/>
+          <circle cx="30" cy="63" r="1" fill="#fda4af"/>
+          <circle cx="33" cy="63" r="1" fill="#fda4af"/>
+        </g>
+
+        <!-- Right Paw (Drumming) -->
+        <g class="paw-right">
+          <ellipse cx="68" cy="62" rx="7" ry="5" fill="#ffffff" stroke="#181926" stroke-width="1.5"/>
+          <circle cx="67" cy="63" r="1" fill="#fda4af"/>
+          <circle cx="70" cy="63" r="1" fill="#fda4af"/>
+        </g>
+      </svg>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       10. FOOTER & TOAST NOTIFICATION
+       ========================================================================= -->
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <div class="footer-credit">
+        Designed & Built by <strong>Aalia Nomani</strong> · 2nd Year CSE @ CGC Landran
+      </div>
+      <div class="footer-meta">
+        Bongo Cat Approved 🐾 · 2026
+      </div>
+    </div>
+  </footer>
+
+  <div class="copy-toast" role="alert" aria-live="assertive">Link copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="js/bongo-cat.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/project-3d.js"></script>
+  <script src="js/interactive-demos.js"></script>
+  <script src="js/ending.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
